@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+<style>
+    body{
+        background-image:radial-gradient(rgb(138, 96, 96),blue);
+    }
+    .signup{
+        height: 400px;
+        width: 400px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: rgba(38, 92, 38,50%);
+        color: aqua;
+        
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="signup">
+                <form action="submit.php" method="post">
+                <label for="username">Username <i class="fa fa-user-circle" aria-hidden="true"></i></label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="username">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" class="form-control">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control">
+                <label for="password">password <i class="fa fa-lock" aria-hidden="true"></i></label>
+                <input type="password" name="password" id="password" class="form-control">
+                <br>
+                <input type="submit" value="signup" class="btn btn-primary form-control" name="signup">
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
