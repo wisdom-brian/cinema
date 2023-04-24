@@ -8,52 +8,63 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Cinema Booking</title>
+<title>cinema</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="navId">
-                    <li class="nav-item">
-                        <a href="#tab1Id" class="nav-link active"><i class="fa fa-home" aria-hidden="true"></i> home </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-book-open    "></i> categories</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#tab2Id">recent</a>
-                            <a class="dropdown-item" href="#tab3Id"> movies</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#tab4Id"> series</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#tab5Id" class="nav-link"><i class="fa fa-sign-in-alt" aria-hidden="true"></i> sign up/ login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link "><i class="fa fa-map" aria-hidden="true"></i> about us</a>
-                    </li>
-                </ul>
-                
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-                    <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <button  data-target="#sidebar" data-toggle="collapse"> <i class="fa fa-bell" aria-hidden="true"></i></button>
+                <a class="navbar-brand">cinema</a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav mr-auto mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i>HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-book-open    "></i>CATEGORIES</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#tab2Id">MOVIES</a>
+                                <a class="dropdown-item" href="#tab3Id">SERIES</a>
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./login.html" tabindex="-1" aria-disabled="true">SIGNUP/LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>CART</a>
+                        </li>
+                    </ul>
                 </div>
-                
-                <script>
-                    $('#navId a').click(e => {
-                        e.preventDefault();
-                        $(this).tab('show');
-                    });
-                </script>
+            </nav>
+        </div>
+        <div class="row" style="margin-top: 55px;">
+            <div class="col-sm-2 bg-dark text-light collapse show" id="sidebar">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima, ea quisquam deserunt possimus sint beatae dolore ratione reiciendis harum quas repellendus quos, ab debitis id, suscipit reprehenderit eos exercitationem.
+                Ducimus cupiditate quam sit, asperiores id in repellat blanditiis autem quod soluta? Nostrum deleniti saepe consequatur amet sit hic veritatis voluptatem iste praesentium, est nihil, quam ex quaerat. Qui, alias.
+                Voluptas eos provident nisi, assumenda cum quasi facere tempora autem velit animi tenetur dolorem illo ex quia deleniti laborum soluta impedit, reiciendis maiores nobis necessitatibus aspernatur molestiae, dolor debitis? Nisi.
+                Illum alias fugiat tempora odit ullam nemo cum, consequatur accusamus quas corporis praesentium laboriosam nostrum est magni soluta quaerat natus distinctio rerum vero non eius molestiae nam voluptas necessitatibus? Rerum.
+                Distinctio dolor temporibus nemo quidem eligendi repellat, at ratione beatae cumque debitis totam magni ea, explicabo non repellendus aut soluta odio recusandae natus voluptatibus doloribus saepe nostrum enim vitae. Magnam.</p>
             </div>
-            <div class="main"><br><br>
-                <h1 style="text-align: center;">Cinema Booking</h1>
+            <div class="col-sm">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id suscipit voluptas in eaque blanditiis quibusdam optio ipsam vero soluta nam! Eius iste soluta voluptatibus. Nostrum sit reprehenderit omnis ducimus ab.</p>
+                
+            </div>
+            <div class="col-sm-2 bg-dark text-light">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, iste deserunt? Sit excepturi consequatur laudantium deleniti minima commodi praesentium fugit debitis dolorum rerum atque tenetur quia unde aperiam, dignissimos ratione!
+                Rerum corporis quo distinctio dolores minima, nesciunt dolorem nostrum exercitationem doloribus nam sequi, quisquam tempore est iusto debitis! Explicabo fugit odit quo dolorem nostrum dignissimos in provident necessitatibus quasi nam.
+                Ratione asperiores suscipit libero perferendis amet soluta quibusdam quam ex, repudiandae, aliquam necessitatibus quia perspiciatis placeat, iure sunt distinctio debitis officia illo eius. Facilis, aut eligendi nesciunt quas ipsam dolor?
+                Molestias repellendus sapiente optio explicabo ea vel aliquam, dolores officia impedit accusamus facere quas aperiam aliquid sit, at ducimus voluptatibus nemo debitis modi? Ipsam sapiente tempore soluta fugiat? Fugit, eius.
+                Quae quis inventore fugiat vitae vel nisi voluptates officiis, voluptas ea cum debitis ipsa rerum, consequatur ipsum. Ad temporibus quam eum voluptates. Quae nemo, reprehenderit facere voluptates exercitationem tempore cupiditate!</p>
+
+
             </div>
         </div>
     </div>
